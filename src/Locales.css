@@ -1,0 +1,113 @@
+.locales-container {
+    height: 100vh;
+    padding: 80px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.locales-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.locales-btn-column {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    gap: 1.5rem;
+    margin-bottom: 5px;
+} 
+
+.locales-title {
+    width: 600px;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.btn-local {
+    background-color: #FDEDCC;
+    color: #2F5592;
+    border: 2px solid #2F5592;
+    padding: 0.20rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-local.active {
+    background-color: #2F5592;
+    color: #FDEDCC;
+    border: 2px solid #2F5592;
+}
+
+.locales-image-text-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.local-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+    max-width: 450px;
+    margin-bottom: 0;
+}
+
+.local-item-wrapper.single-image-wrapper {
+    max-width: 650px;
+}
+
+.single-image-wrapper .local-image {
+    max-width: 100%;
+    width: 650px;
+}
+
+.local-item-wrapper.single-image-wrapper .local-image {
+    width: 600px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.local-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.locales-image-column, 
+.locales-text-column {
+    display: none; 
+} 
+
+.locales-text-content {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #2F5592;
+    line-height: 1.4;
+    text-align: center;
+    padding: 0 10px;
+    max-width: none;
+}
+
+.local-item-wrapper:last-child {
+    margin-bottom: 0;
+}

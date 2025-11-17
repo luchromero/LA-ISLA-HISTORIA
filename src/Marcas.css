@@ -1,0 +1,77 @@
+.marcas-contenedor-principal {
+  min-height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "titulo titulo"
+    "texto galeria";
+  align-items: center;
+  justify-items: center;
+  padding: 0 4%;
+  gap: 3rem;
+}
+
+.texto-marcas {
+  grid-area: texto;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  color: #2F5592;
+  margin-top: -170px;
+}
+
+.texto-marcas p {
+    font-family: 'Montserrat';
+    max-width: 650px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: -50px;
+}
+
+.galeria-marcas-secundaria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: galeria;
+    width: 100%; 
+    padding: 0;
+    margin-top: 0;
+}
+
+.marcas-centro-image {
+    width: 90%;
+    max-width: 850px; 
+    height: auto;
+    object-fit: contain;
+}
+
+.marcas-fade-in-image {
+    width: 30%;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.marcas-fade-in-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.marcas-title {
+    grid-area: titulo;
+    width: 80%;
+    max-width: 600px; 
+    height: auto;
+    margin-bottom: 1rem;
+    margin-top: 30px;
+}
+
+
+

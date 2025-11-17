@@ -1,0 +1,99 @@
+.surfday-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.surfday-contenido {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.surfday-texto p {
+  max-width: 800px;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: #2F5592;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.surfday-botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.surf-btn {
+  background-color: #FDEDCC;
+  color: #2F5592;
+  border: 2px solid #2F5592;
+  padding: 0.20rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.surf-btn.active {
+  background-color: #2F5592;
+  color: #FDEDCC;
+  border: 2px solid #2F5592;
+}
+
+.galeria-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.galeria-simple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.galeria-simple img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.team-carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-carrusel {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #2F5592;
+}
+
+.carrusel-imagenes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+.carrusel-imagenes img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+

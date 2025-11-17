@@ -1,0 +1,51 @@
+.team-container {
+  height: 100vh;
+  padding: 80px 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.team-texto {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: #2F5592;
+  max-width: 800px;
+  width: 90%;
+  text-align: center;
+  margin: -50px auto 80px auto;
+  line-height: 1.6;
+  margin-top: 30px;
+}
+
+.team-imagen {
+    width: 900px;
+    height: 400px;
+    display: block;
+    margin: 20px auto 0 auto;
+    margin-bottom: 40px;
+}
+
+.team-title {
+  display: block;
+  margin: 0 auto 70px auto;
+  width: 230px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.btn-team {
+    background-color: #FDEDCC;
+    color: #2F5592;
+    border: 2px solid #2F5592;
+    padding: 0.20rem 1rem;
+    font-size: 1.1rem;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: opacity 1s ease-in;
+}
+
+.btn-team.active {
+    background-color: #2F5592;
+    color: #FDEDCC;
+    border: 2px solid #2F5592;
+}

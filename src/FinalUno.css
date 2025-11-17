@@ -1,0 +1,21 @@
+.final-uno-contenedor {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.final-uno-imagen {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}

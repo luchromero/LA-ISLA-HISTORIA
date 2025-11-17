@@ -1,0 +1,68 @@
+.contenedor-principal {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "titulo"
+    "texto"
+    "galeria"
+    "boton";
+  align-items: center;
+  padding: 0 4%;
+  gap: 3rem 0;
+}
+
+.texto-colaboraciones {
+  grid-area: texto;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0;
+  color: #2F5592;
+}
+
+.texto-colaboraciones p {
+    font-family: 'Montserrat';
+    max-width: 650px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.galeria-colaboraciones-secundaria {
+    grid-area: galeria;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%; 
+    padding: 0 4%;
+    margin-top: 2rem;
+    gap: 4rem;
+    margin-left: -40px;
+}
+
+.colaboraciones-fade-in-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.colaboraciones-fade-in-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.colaboraciones-title {
+  margin: 0 auto;
+  width: 450px;
+  height: auto;
+  margin-top: 80px;
+}
+

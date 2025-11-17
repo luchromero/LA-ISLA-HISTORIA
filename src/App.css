@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #FDEDCC;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.linea-tiempo-container {
+  position: fixed;
+  width: 200px;
+  top: 0;
+  left: 0;
+  right: auto;
+  height: 100vh;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.contenido-principal {
+  margin-right: 0;
+  z-index: 10;
+  margin-left: 200px;
+  min-height: 100vh;
+}
+
+
+@media (min-width: 1025px) {
+  html,
+  body {
+    box-shadow: inset 5px -20px 70px 0px rgba(0, 0, 0, 0.477);
+  }
+}
+
+@font-face {
+  font-family: 'Gliker';
+  src: url('./assets/Gliker-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,97 @@
+.eventos-contenedor-principal {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "titulo"
+    "boton"
+    "texto"
+    "galeria";
+  align-items: center;
+  justify-items: center;
+  padding: 0 4%;
+  gap: 1rem;
+}
+
+.eventos-title {
+  grid-area: titulo;
+  display: block;
+  margin: 0 auto;
+  width: 220px;
+  height: auto;
+  max-width: 100%;
+}
+
+.texto-eventos {
+  grid-area: texto;
+  max-width: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #2F5592;
+}
+
+.texto-eventos p {
+  font-family: 'Montserrat';
+  max-width: 800px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.eventos-btn {
+  grid-area: boton;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  margin-bottom: -30px;
+}
+
+.btn-eventos {
+  background-color: #FDEDCC;
+  color: #2F5592;
+  border: 2px solid #2F5592;
+  padding: 0.25rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-eventos.active {
+  background-color: #2F5592;
+  color: #FDEDCC;
+  border: 2px solid #2F5592;
+}
+
+.galeria-eventos-secundaria {
+  grid-area: galeria;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 4%;
+  margin-top: 1.5rem;
+  gap: 3rem;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.galeria-eventos-secundaria.hidden-gallery {
+  opacity: 0;
+}
+
+.eventos-fade-in-image {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  opacity: 0;
+  transform: translateY(0);
+  transition: opacity 0.8s ease-out;
+}
+
+.eventos-fade-in-image.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
